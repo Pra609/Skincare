@@ -162,6 +162,19 @@ nav ul li a:hover {
 .card:nth-child(even) {
     flex-direction: row-reverse; /* Image on right, text on left */
 }
+/* Video Container */
+.video-container {
+    margin-top: 20px; /* Space above the video */
+    border-radius: 10px; /* Rounded corners for the video */
+    overflow: hidden; /* Ensure the video stays within the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the video */
+}
+
+.video-container iframe {
+    width: 100%; /* Full width of the container */
+    height: 315px; /* Fixed height for the video */
+    border: none; /* Remove iframe border */
+}
 
 /* Subscribe Section */
 .subscribe-section {
@@ -295,14 +308,15 @@ footer p {
 
     /* Stack card content vertically */
     /* Card Container */
+/* Card Container */
 .card {
     display: flex;
-    align-items: center;
+    align-items: stretch; /* Ensure both boxes stretch to the same height */
     background-color: #FFFFFF; /* White background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 80%;
-    margin: 20px 0;
+    margin: 20px auto; /* Center the card horizontally */
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -312,24 +326,29 @@ footer p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Card Images */
+/* Image Box */
 .card img {
-    width: 40%;
+    width: 40%; /* Image takes 40% of the card width */
     height: auto;
     object-fit: cover;
-    padding: 20px; /* Padding around the image */
+    margin: 20px; /* Margin on all sides */
+    border-radius: 10px; /* Rounded corners for the image */
 }
 
-/* Card Content */
+/* Text Box */
 .card-content {
-    width: 60%;
-    padding: 30px; /* Increased padding for text */
-    text-align: left;
+    width: 60%; /* Text takes 60% of the card width */
+    padding: 20px; /* Padding inside the text box */
+    margin: 20px; /* Margin on all sides */
+    background-color: #E8F5E9; /* Light green background for the text box */
+    border-radius: 10px; /* Rounded corners for the text box */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    overflow: hidden; /* Prevent text from overflowing */
 }
 
 .card-content h2 {
     font-size: 2.2em; /* Larger heading */
-    margin-bottom: 25px; /* More space below the heading */
+    margin-bottom: 20px; /* Space below the heading */
     color: #2E7D32; /* Dark green text */
     text-align: center; /* Center the heading */
     font-weight: 600; /* Slightly bolder heading */
@@ -337,7 +356,7 @@ footer p {
 
 .card-content p {
     font-size: 1.2em; /* Larger text size */
-    margin-bottom: 25px; /* More space between paragraphs */
+    margin-bottom: 20px; /* Space between paragraphs */
     color: #4CAF50; /* Vibrant green text */
     line-height: 1.8; /* Increased line height for better readability */
     text-align: justify; /* Justify text for better alignment */
@@ -349,21 +368,20 @@ footer p {
 }
 
 .card-content ul {
-    margin-bottom: 25px; /* More space below the list */
+    margin-bottom: 20px; /* Space below the list */
     padding-left: 30px; /* Increase padding for the list */
 }
 
 .card-content ul li {
     font-size: 1.1em; /* Slightly larger list items */
-    margin-bottom: 15px; /* More space between list items */
+    margin-bottom: 15px; /* Space between list items */
     color: #4CAF50; /* Vibrant green text */
     line-height: 1.8; /* Increased line height for better readability */
 }
 
 .card-content ul li strong {
     color: #2E7D32; /* Dark green text */
-    font-weight: 600; /* Bold text for emphasis */
-}
+    font-weight: 600; /*
     /* Adjust subscribe section */
     .subscribe-section input {
         width: 100%;
@@ -386,13 +404,18 @@ footer p {
         font-size: 0.9em;
     }
 
-    /* Adjust card content for mobile */
-    .card-content h2 {
-        font-size: 1.2em;
+    .card {
+        flex-direction: column; /* Stack image and text vertically */
     }
 
-    .card-content p {
-        font-size: 0.9em;
+    .card img {
+        width: 100%; /* Full width for image on small screens */
+        margin: 10px 0; /* Adjust margins */
+    }
+
+    .card-content {
+        width: 100%; /* Full width for text on small screens */
+        margin: 10px 0; /* Adjust margins */
     }
 
     /* Adjust footer for mobile */
@@ -405,4 +428,6 @@ footer p {
         flex-direction: column;
         gap: 10px;
     }
+    }
 }
+        
