@@ -115,62 +115,88 @@ nav ul li a:hover {
 }
 
 /* Personalized Skincare Routine Section */
+/* Personalized Skincare Routine Section */
 .personalized-routine-section {
     padding: 40px 20px;
     background-color: #FFFFFF; /* White background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 40px auto;
-    max-width: 800px;
-    text-align: left;
+    max-width: 1200px;
+    text-align: center;
 }
 
 .personalized-routine-section h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     color: #2E7D32; /* Dark green text */
-    text-align: center;
 }
 
 .personalized-routine-section p {
     font-size: 1.1em;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #666; /* Gray text */
     line-height: 1.6;
-    text-align: justify;
+    text-align: center;
 }
 
-.personalized-routine-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Routine Container */
+.routine-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.personalized-routine-section ul li {
-    background-color: #E8F5E9; /* Light green background */
+/* Routine Card */
+.routine-card {
+    background-color: #FFFFFF; /* White background */
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
     padding: 20px;
-    margin-bottom: 15px;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.personalized-routine-section ul li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+.routine-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.personalized-routine-section ul li strong {
-    font-size: 1.1em;
+/* Card Icon */
+.card-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #4CAF50; /* Vibrant green */
+}
+
+/* Card Content */
+.card-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
     color: #2E7D32; /* Dark green text */
-    display: block;
-    margin-bottom: 10px;
 }
 
-.personalized-routine-section ul li p {
+.card-content p {
     font-size: 1em;
     color: #666; /* Gray text */
     line-height: 1.6;
     margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .routine-card {
+        max-width: 100%;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .routine-card {
+        max-width: 100%;
+    }
 }
 
 /* Footer */
