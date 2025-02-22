@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
@@ -21,22 +21,44 @@
             </ul>
         </nav>
     </header>
+
     <section class="contact-section">
         <h1>Contact Us</h1>
+        <p class="section-description">
+            We’d love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to
+            reach out to us. Our team is here to help you with all your skincare needs.
+        </p>
 
         <div class="contact-info">
-            <p><strong>Email:</strong> info@glowguide.com</p>
-            <p><strong>Phone:</strong> 9445566782</p>
-            <p><strong>Visit Us:</strong> Glow Guide Headquarters,No.42, 2nd Cross, Chandra Layout, Bangalore - 560040 (Next Union Bank 7th Main, Near Bmtc Bus Stand & Gurushree Hospital)</p>
-            <p><strong>Click on the image to get the directions to our hospital</strong></p>
+            <div class="info-card">
+                <h2>Email</h2>
+                <p>info@glowguide.com</p>
+            </div>
+            <div class="info-card">
+                <h2>Phone</h2>
+                <p>+91 94455 66782</p>
+            </div>
+            <div class="info-card">
+                <h2>Visit Us</h2>
+                <p>
+                    Glow Guide Headquarters,<br>
+                    No. 42, 2nd Cross, Chandra Layout,<br>
+                    Bangalore - 560040<br>
+                    (Next to Union Bank, 7th Main, Near BMTC Bus Stand & Gurushree Hospital)
+                </p>
+            </div>
         </div>
+
         <div class="map-container">
-            
-            <a href="https://www.google.com/maps/search/No.42,+2nd+Cross,+Chandra+Layout,+Bangalore+-+560040+(Next+Union+Bank+7th+Main,+Near+Bmtc+Bus+Stand+%26+Gurushree+Hospital)/@12.9586571,77.5211784,17z/data=!3m1!4b1?entry=ttu"><img src="assets/map2.png"/></a>
+            <h2>Find Us on Google Maps</h2>
+            <a href="https://www.google.com/maps/search/No.42,+2nd+Cross,+Chandra+Layout,+Bangalore+-+560040+(Next+Union+Bank+7th+Main,+Near+Bmtc+Bus+Stand+%26+Gurushree+Hospital)/@12.9586571,77.5211784,17z/data=!3m1!4b1?entry=ttu">
+                <img src="assets/map2.png" alt="Google Maps Location">
+            </a>
         </div>
 
         <div class="form-container">
-            <p><strong>Would be happy to receive your feedback!</strong></p>
+            <h2>Send Us a Message</h2>
+            <p>We’d be happy to receive your feedback or answer any questions you may have.</p>
             <form action="contact_process.php" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -50,20 +72,20 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
+
         <div class="faq-section">
             <h2>Frequently Asked Questions (FAQs)</h2>
-
-        <div class="faq-item">
+            <div class="faq-item">
                 <h3>How can I personalize my skincare routine?</h3>
                 <p>Visit our Skincare Routines section and take the personalized quiz to receive tailored recommendations based on your skin type.</p>
-        </div>
-
-        <div class="faq-item">
+            </div>
+            <div class="faq-item">
                 <h3>Can I collaborate with Glow Guide?</h3>
                 <p>Yes, we love collaborations! Reach out to us at collaborations@glowguide.com for partnership opportunities.</p>
-        </div>
+            </div>
         </div>
     </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
@@ -83,12 +105,8 @@
                 <a href="#" target="_blank"><img src="assets/twitter.png" alt="Twitter"></a>
                 <a href="#" target="_blank"><img src="assets/insta.png" alt="Instagram"></a>
             </div>
-            </div>
-        </br>
-            <p align="center"><b>&copy; 2025 Your Skincare. All rights reserved.</b></p>
         </div>
-        
+        <p align="center"><b>&copy; 2025 Your Skincare. All rights reserved.</b></p>
     </footer>
-    
 </body>
 </html>

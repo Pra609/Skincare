@@ -23,55 +23,146 @@
             </ul>
         </nav>
     </header>
+
     <section class="skin-type-section">
-        <h1> Why Skincare is Essential? </h1>
-        <p>Your skin is your body's largest organ and deserves the best care! A consistent skincare routine keeps your
+        <h1>Why Skincare is Essential?</h1>
+        <p class="section-description">
+            Your skin is your body's largest organ and deserves the best care! A consistent skincare routine keeps your
             skin healthy, glowing, and protected from daily stressors like pollution and UV rays. It helps prevent
             breakouts, dryness, and premature aging while boosting confidence and overall well-being.
-
-            Investing in skincare isn’t just about beauty—it’s about self-care and long-term health. Nourish your skin
-            today for a radiant and youthful tomorrow! Get your personalised skin care routines based on your skin type
         </p>
-        <h2>Click on your your skin type in the image to get personalised skin care routine</h2>
-        <div class="image-section">
-            <img src="assets/skin_types.png" alt="Skin Types Image" usemap="#skinTypesMap">
-            <map name="skinTypesMap">
-                <area shape="rect" coords="0,0,230,200" href="https://youtu.be/U_ckjR-vnJA" alt="Oily Skin">
-                <area shape="rect" coords="250,0,400,200" href=https://youtu.be/ZVDLMaJJk3k alt="Combination Skin">
-                <area shape="rect" coords="400,0,900,200" href="https://youtu.be/4y5I0HDyYHs?si=lYma9LvMSAHmqK5L"
-                    alt="Dry Skin">
-            </map>
-        </div>
-        <div class="content">
-            <div class="video-container">
-                <h3>Having a normal skin?Click on this video to get your personalised skin routine!</h3>
-                <video width="560" height="315" controls>
-                    <source src="C:\Users\Lenovo\Documents\programming\html_project\assets\video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <p class="section-description">
+            Investing in skincare isn’t just about beauty—it’s about self-care and long-term health. Nourish your skin
+            today for a radiant and youthful tomorrow! Get your personalized skincare routines based on your skin type.
+        </p>
+
+        <h2>Choose Your Skin Type</h2>
+        <div class="routine-container">
+            <!-- Oily Skin Routine Card -->
+            <div class="routine-card">
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/U_ckjR-vnJA" 
+                        title="Oily Skin Routine" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="card-content">
+                    <h2>Oily Skin Routine</h2>
+                    <p>
+                        If you have oily skin, follow this routine to control excess oil and keep your skin fresh and
+                        matte.
+                    </p>
+                </div>
             </div>
 
-            <p>Understanding your skin type and following a skincare routine tailored to your specific skin needs is
-                crucial for several reasons:</p>
-            <ul>
-                <li>Effective Skincare:</br>Different skin types have unique characteristics and needs. Knowing your
-                    skin type allows you to choose and use products that are specifically formulated to address those
-                    needs, leading to more effective results.</li>
-                <li>Prevention of Skin Issues:</br>Tailoring your skincare routine to your skin type helps in preventing
-                    various skin issues. For example, using products suitable for oily skin can help control excess oil
-                    production, reducing the likelihood of acne and breakouts.</li>
-                <li>Optimal Hydration:</br>Dry skin requires more hydration, and using moisturizers with ingredients
-                    suitable for dry skin helps maintain optimal moisture levels. On the other hand, using heavy
-                    moisturizers on oily skin can lead to clogged pores.</li>
-                <li>Targeted Treatment:</br>Knowing your skin type allows you to address specific concerns. For
-                    instance, if you have sensitive skin, you can avoid products with harsh ingredients that may cause
-                    irritation.</li>
-                <li>Achieving Healthy Skin:</br>A personalized skincare routine contributes to overall skin health. It
-                    can promote a clearer complexion, even skin tone, and a smoother texture.</li>
-            </ul>
+            <!-- Combination Skin Routine Card -->
+            <div class="routine-card">
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/ZVDLMaJJk3k" 
+                        title="Combination Skin Routine" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="card-content">
+                    <h2>Combination Skin Routine</h2>
+                    <p>
+                        For combination skin, balance is key. Follow this routine to hydrate dry areas and control oil in
+                        the T-zone.
+                    </p>
+                </div>
+            </div>
 
+            <!-- Dry Skin Routine Card -->
+            <div class="routine-card">
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/4y5I0HDyYHs" 
+                        title="Dry Skin Routine" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="card-content">
+                    <h2>Dry Skin Routine</h2>
+                    <p>
+                        If you have dry skin, focus on hydration and nourishment. Follow this routine to restore moisture
+                        and prevent flakiness.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Normal Skin Routine Card -->
+            <div class="routine-card">
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/ZkUl1Ur2XVw" 
+                        title="Normal Skin Routine" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="card-content">
+                    <h2>Normal Skin Routine</h2>
+                    <p>
+                        If you have normal skin, maintain your skin's health with this simple and effective routine.
+                    </p>
+                </div>
+            </div>
         </div>
+
+        <h2>Why is a Personalized Skincare Routine Important?</h2>
+        <p>
+            Understanding your skin type and following a skincare routine tailored to your specific skin needs is
+            crucial for several reasons:
+        </p>
+        <ul>
+            <li>
+                <strong>Effective Skincare:</strong><br>
+                Different skin types have unique characteristics and needs. Knowing your skin type allows you to
+                choose and use products that are specifically formulated to address those needs, leading to more
+                effective results.
+            </li>
+            <li>
+                <strong>Prevention of Skin Issues:</strong><br>
+                Tailoring your skincare routine to your skin type helps in preventing various skin issues. For
+                example, using products suitable for oily skin can help control excess oil production, reducing the
+                likelihood of acne and breakouts.
+            </li>
+            <li>
+                <strong>Optimal Hydration:</strong><br>
+                Dry skin requires more hydration, and using moisturizers with ingredients suitable for dry skin
+                helps maintain optimal moisture levels. On the other hand, using heavy moisturizers on oily skin can
+                lead to clogged pores.
+            </li>
+            <li>
+                <strong>Targeted Treatment:</strong><br>
+                Knowing your skin type allows you to address specific concerns. For instance, if you have sensitive
+                skin, you can avoid products with harsh ingredients that may cause irritation.
+            </li>
+            <li>
+                <strong>Achieving Healthy Skin:</strong><br>
+                A personalized skincare routine contributes to overall skin health. It can promote a clearer
+                complexion, even skin tone, and a smoother texture.
+            </li>
+        </ul>
     </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
@@ -92,12 +183,8 @@
                 <a href="#" target="_blank"><img src="assets/insta.png" alt="Instagram"></a>
             </div>
         </div>
-        </br>
         <p align="center"><b>&copy; 2025 Your Skincare. All rights reserved.</b></p>
-        </div>
-
     </footer>
-
 </body>
 
 </html>
